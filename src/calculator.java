@@ -25,10 +25,10 @@ public class calculator {
                 System.out.println("Result is " + (arg1 * arg2));
                 break;
             case "divide":
-                System.out.println("Result is " + (arg1 / (float) arg2));
+                System.out.print("Result is " + (arg1 / (float) arg2));
                 break;
             default:
-                System.out.println("function not supported");
+                System.out.print("function not supported");
                 break;
         }
     }
