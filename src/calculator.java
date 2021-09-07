@@ -14,20 +14,22 @@ public class calculator {
     }
 
     static void runCalc(int arg1, int arg2, String func){
-        if(func.equals("add")){
-            System.out.println("Result is " + (arg1+arg2));
-        }
-        else if(func.equals("subtract")){
-            System.out.println("Result is " + (arg1-arg2));
-        }
-        else if(func.equals("multiply")){
-            System.out.println("Result is " + (arg1*arg2));
-        }
-        else if(func.equals("divide")){
-            System.out.println("Result is " + (arg1/(float)arg2));
-        }
-        else{
-            System.out.println("function not supported");
+        switch (func) {
+            case "add":
+                System.out.println("Result is " + (arg1 + arg2));
+                break;
+            case "subtract":
+                System.out.println("Result is " + (arg1 - arg2));
+                break;
+            case "multiply":
+                System.out.println("Result is " + (arg1 * arg2));
+                break;
+            case "divide":
+                System.out.println("Result is " + (arg1 / (float) arg2));
+                break;
+            default:
+                System.out.println("function not supported");
+                break;
         }
     }
 }
